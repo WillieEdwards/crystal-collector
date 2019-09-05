@@ -98,7 +98,7 @@ $(document).ready(function() {
 			$("#wins").html("Wins: " + wins);
 
 
-			setTimeout(function() {gameReset("WIN")}, 200);
+			setTimeout(function() {gameReset("WINNER!!! You have collected the desired amount of crystals!")}, 200);
 		}
 
 		else if (totalScore > randNumber){
@@ -107,7 +107,7 @@ $(document).ready(function() {
 			$("#totalNumber").html(totalScore);
 			$("#losses").html("Losses: " + losses);
 
-			setTimeout(function() {gameReset("LOSE")}, 200);
+			setTimeout(function() {gameReset("Your frivolous behavior has got the best of you... You lose!")}, 200);
 		}
 	});
 
