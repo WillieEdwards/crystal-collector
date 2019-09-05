@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
 
     <title>Crystal Collector | Willie Edwards</title>
 </head>
@@ -39,7 +40,70 @@
         </nav>
 
         <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Crystal Collector</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <h2>How to Play</h2>
+                    <ul>
+                        <li>At the start of the game, you will be presented with a random number of crystals to collect.</li>
+                        <li>You must match this random number by adding up the values of the crystals in your collection.</li>
+                        <li>Each crystal you have will have a mystery value assigned to it at the start of each game.</li>
+                        <li>You must find out the value of each of your crystals on your own by clicking on them.</li>
+                        <li>Match the number of crystals to collect to your crystal count and you win! Go over and you lose...</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
 
+                <div class="col-md-3" id="numberSection">
+                    <h3 class="text-center" id="random">Crystals to Collect:</h3>
+                    <h2 class="numberBox text-center" id="randomNumber">120</h2>
+                </div>
+
+                <div class="col-md-3" id="totalPoints">
+                    <h3 class="text-center" id="score">Your Crystal Count:</h3>
+                    <h2 class="numberBox text-center" id="totalNumber">0</h2>
+                </div>
+
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col text-center" id="buttonSection">
+
+                    <button id="button-1" value="0"><img src="assets/images/green-rupee.jpg"
+                            class="img-responsive icons" id="icon1"></button>
+
+                    <button id="button-2" value="0"><img src="assets/images/blue-rupee.jpg" class="img-responsive icons"
+                            id="icon2"></button>
+
+                    <button id="button-3" value="0"><img src="assets/images/red-rupee.jpg" class="img-responsive icons"
+                            id="icon3"></button>
+
+                    <button id="button-4" value="0"><img src="assets/images/purple-rupee.jpg"
+                            class="img-responsive icons" id="icon4"></button>
+
+                </div>
+            </div>
+            <div class="row" id="scoreSection">
+
+                <div class="col-md-4"></div>
+
+                <div class="col-md-2" id="winSection">
+                    <h3 class="text-left" id="wins">Wins: 0</h3>
+                </div>
+
+                <div class="col-md-2" id="lossSection">
+                    <h3 class="text-right" id="losses">Losses: 0</h3>
+                </div>
+
+                <div class="col-md-4"></div>
+
+            </div>
         </div>
 
         <footer class="bg-dark">
@@ -61,6 +125,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
